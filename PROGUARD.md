@@ -19,5 +19,5 @@ added in the future.**
 > Use below rules to keep **entire** source code of the library.
 
     # Keep all classes within library package.
-    -keep class universum.studios.android.pager.adapter.** { *; }
+    -keep class universum.studios.android.imageloader.** { *; }
     
