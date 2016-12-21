@@ -3,7 +3,7 @@ Android Image Loader
 
 ## Download ##
 
-Download the latest **[release](https://github.com/universum-studios/android_image_loader/releases/tag/support-1.0.0 "Latest Releases page")** or **add as dependency** in your project via:
+Download the latest **[release](https://github.com/universum-studios/android_image_loader/releases/tag/0.6.1 "Latest Releases page")** or **add as dependency** in your project via:
 
 ### Gradle ###
 
@@ -22,4 +22,4 @@ Available from the **Android [API Level 9](http://developer.android.com/about/ve
 
 Licensed under the **Apache License**: **[Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)** or later.
 
-> You can redistribute, modify or publish any part of the code presented within this repository but as it is described in the [**LICENSE**](https://github.com/universum-studios/android_image_loader/blob/release/LICENSE.md), the software distributed under the License is distributed on an **"AS IS" BASIS, WITHOUT WARRANTIES or CONDITIONS OF ANY KIND**.
+> You can redistribute, modify or publish any part of the code presented within this repository but as it is described in the [**LICENSE**](https://github.com/universum-studios/android_image_loader/blob/master/LICENSE.md), the software distributed under the License is distributed on an **"AS IS" BASIS, WITHOUT WARRANTIES or CONDITIONS OF ANY KIND**.
