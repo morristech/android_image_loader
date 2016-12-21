@@ -7,7 +7,7 @@ Download the latest **[release](https://github.com/universum-studios/android_ima
 
 ### Gradle ###
 
-    compile 'universum.studios.android:image_loader:0.6.@aar'
+    compile 'universum.studios.android:image_loader:0.6.1@aar'
 
 ## Compatibility ##
 
