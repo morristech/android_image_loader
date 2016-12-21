@@ -97,8 +97,9 @@ afterEvaluate { project ->
         final String supportVersion = project.property('android.support.version')
         classpath += files(
                 android.getBootClasspath(),
-                sdkDir + '\\extras\\android\\m2repository\\com\\android\\support\\support-annotations\\' + supportVersion + '\\support-annotations-' + supportVersion + '.jar',
-                sdkDir + '\\extras\\android\\m2repository\\com\\android\\support\\support-v4\\' + supportVersion + '\\support-v4-' + supportVersion + '-sources.jar'
+                sdkDir + '\\extras\\android\\m2repository\\com\\android\\support\\support-annotations\\' + supportVersion + '\\support-annotations-' + supportVersion + '.jar'
+                // Glide:
+                //sdkDir + '\\extras\\android\\m2repository\\com\\android\\support\\support-v4\\' + supportVersion + '\\support-v4-' + supportVersion + '-sources.jar'
         )
         failOnError false
     }
