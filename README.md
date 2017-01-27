@@ -1,4 +1,4 @@
-Android Image Loader
+Image Loader
 ===============
 
 ## Download ##

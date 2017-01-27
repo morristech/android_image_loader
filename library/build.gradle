@@ -84,5 +84,5 @@ dependencies {
 // Apply MODULE specific build script.
 apply from: 'gradle/module-' + project.property('library.module.name') + '.gradle'
 
-// Apply MAVEN script.
-apply from: 'maven.gradle'
+// Apply PUBLISH script.
+apply from: '../publish/publish.gradle'
