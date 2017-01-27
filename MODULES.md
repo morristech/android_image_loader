@@ -25,36 +25,36 @@ as usually.
 ## Available modules ##
 > Following modules are available in the [latest](https://github.com/universum-studios/android_image_loader/releases "Latest Releases page") release.
 
-**[Interface](https://github.com/universum-studios/android_preferences/tree/master/library/src/main)**
+**[Interface](https://github.com/universum-studios/android_image_loader/tree/master/library/src/main)**
 
     compile 'universum.studios.android:image-loader:0.6.1@aar'
 
-**[Base](https://github.com/universum-studios/android_preferences/tree/master/library/src/base)**
+**[Base](https://github.com/universum-studios/android_image_loader/tree/master/library/src/base)**
 
     compile 'universum.studios.android:image-loader-base:0.6.1@aar'
 
-**[Glide](https://github.com/universum-studios/android_preferences/tree/master/library/src/glide)**
+**[Glide](https://github.com/universum-studios/android_image_loader/tree/master/library/src/glide)**
 
     compile 'universum.studios.android:image-loader-glide:0.6.1@aar'
 
 _depends on:_
 [`com.github.bumptech.glide:glide:3.7.0`](https://github.com/bumptech/glide)
 
-**[Picasso](https://github.com/universum-studios/android_preferences/tree/master/library/src/picasso)**
+**[Picasso](https://github.com/universum-studios/android_image_loader/tree/master/library/src/picasso)**
 
     compile 'universum.studios.android:image-loader-picasso:0.6.1@aar'
 
 _depends on:_
 [`com.squareup.picasso:picasso:2.5.2`](http://square.github.io/picasso/)
 
-**[UniversalImageLoader](https://github.com/universum-studios/android_preferences/tree/master/library/src/universal)**
+**[UniversalImageLoader](https://github.com/universum-studios/android_image_loader/tree/master/library/src/universal)**
 
     compile 'universum.studios.android:image-loader-universal:0.6.1@aar'
 
 _depends on:_
 [`com.nostra13.universalimageloader:universal-image-loader:1.9.5`](https://github.com/nostra13/Android-Universal-Image-Loader)
 
-**[Volley](https://github.com/universum-studios/android_preferences/tree/master/library/src/volley)**
+**[Volley](https://github.com/universum-studios/android_image_loader/tree/master/library/src/volley)**
 
     not avilable
 
