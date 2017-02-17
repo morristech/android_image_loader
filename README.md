@@ -3,6 +3,7 @@ Image Loader
 
 [![Build Status](https://travis-ci.org/universum-studios/android_image_loader.svg?branch=master)](https://travis-ci.org/universum-studios/android_image_loader)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f5d740b5071a4320be8f22b651509086)](https://www.codacy.com/app/universum-studios/android_image_loader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=universum-studios/android_image_loader&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/f5d740b5071a4320be8f22b651509086)](https://www.codacy.com/app/universum-studios/android_image_loader?utm_source=github.com&utm_medium=referral&utm_content=universum-studios/android_image_loader&utm_campaign=Badge_Coverage)
 
 ## Download ##
 [![Download](https://api.bintray.com/packages/universum-studios/android/universum.studios.android%3Aimage-loader/images/download.svg)](https://bintray.com/universum-studios/android/universum.studios.android%3Aimage-loader/_latestVersion)
