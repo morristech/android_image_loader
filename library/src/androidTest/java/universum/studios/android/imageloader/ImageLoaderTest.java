@@ -16,11 +16,32 @@
  * See the License for the specific language governing permissions and limitations under the License.
  * =================================================================================================
  */
-// Add ARTIFACTS tasks.
-apply from: '../deploy/artifacts.gradle'
+package universum.studios.android.imageloader;
 
-// Apply MAVEN deployment script.
-apply from: '../deploy/maven.gradle'
+import android.support.test.runner.AndroidJUnit4;
 
-// Apply BINTRAY deployment script.
-apply from: '../deploy/bintray.gradle'
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+
+/**
+ * @author Martin Albedinsky
+ */
+@RunWith(AndroidJUnit4.class)
+public final class ImageLoaderTest {
+
+	/**
+	 * Log TAG.
+	 */
+	@SuppressWarnings("unused")
+	private static final String TAG = "ImageLoaderTest";
+
+	@Test
+	public void testError() {
+		final ImageLoader.Error error = new ImageLoader.Error(ImageLoader.Error.REASON_UNKNOWN, "");
+		assertThat(error.reason, is(ImageLoader.Error.REASON_UNKNOWN));
+		assertThat(error.getMessage(), is(""));
+	}
+}

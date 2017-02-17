@@ -1,17 +1,21 @@
 Image Loader
 ===============
 
-## Download ##
+[![Build Status](https://travis-ci.org/universum-studios/android_image_loader.svg?branch=master)](https://travis-ci.org/universum-studios/android_image_loader)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f5d740b5071a4320be8f22b651509086)](https://www.codacy.com/app/universum-studios/android_image_loader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=universum-studios/android_image_loader&amp;utm_campaign=Badge_Grade)
 
-Download the latest **[release](https://github.com/universum-studios/android_image_loader/releases/tag/0.6.1 "Latest Releases page")** or **add as dependency** in your project via:
+## Download ##
+[![Download](https://api.bintray.com/packages/universum-studios/android/universum.studios.android%3Aimage-loader/images/download.svg)](https://bintray.com/universum-studios/android/universum.studios.android%3Aimage-loader/_latestVersion)
+
+Download the latest **[release](https://github.com/universum-studios/android_image_loader/releases "Latest Releases page")** or **add as dependency** in your project via:
 
 ### Gradle ###
 
-    compile 'universum.studios.android:image_loader:0.6.1@aar'
+    compile "universum.studios.android:image_loader:${DESIRED_VERSION}@aar"
 
 ## Compatibility ##
 
-Available from the **Android [API Level 9](http://developer.android.com/about/versions/android-2.3.html "See API highlights")**.
+Supported down to the **Android [API Level 9](http://developer.android.com/about/versions/android-2.3.html "See API highlights")**.
 
 ### Dependencies ###
 

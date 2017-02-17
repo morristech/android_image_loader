@@ -1,4 +1,6 @@
 // Global gradle configuration. This configuration will be used for all sub-projects.
+apply from: './dependencies.gradle'
+
 /**
  * Global build script configuration ===============================================================
  */
@@ -8,6 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
@@ -23,6 +26,9 @@ allprojects {
 
 /**
  * All projects global tasks =======================================================================
+ */
+/**
+ * Task that cleans build directory of the root project.
  */
 task clean(type: Delete) {
     delete rootProject.buildDir
