@@ -36,10 +36,6 @@ import android.support.annotation.Nullable;
 public abstract class BaseImageLoader<L> implements ImageLoader {
 
 	/**
-	 * Interface ===================================================================================
-	 */
-
-	/**
 	 * Constants ===================================================================================
 	 */
 
@@ -47,6 +43,10 @@ public abstract class BaseImageLoader<L> implements ImageLoader {
 	 * Log TAG.
 	 */
 	// private static final String TAG = "BaseImageLoader";
+
+	/**
+	 * Interface ===================================================================================
+	 */
 
 	/**
 	 * Static members ==============================================================================

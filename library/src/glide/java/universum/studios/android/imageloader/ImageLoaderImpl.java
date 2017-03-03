@@ -31,10 +31,6 @@ import com.bumptech.glide.RequestManager;
 final class ImageLoaderImpl extends BaseImageLoader<RequestManager> {
 
 	/**
-	 * Interface ===================================================================================
-	 */
-
-	/**
 	 * Constants ===================================================================================
 	 */
 
@@ -42,6 +38,10 @@ final class ImageLoaderImpl extends BaseImageLoader<RequestManager> {
 	 * Log TAG.
 	 */
 	// private static final String TAG = "ImageLoader#Glide";
+
+	/**
+	 * Interface ===================================================================================
+	 */
 
 	/**
 	 * Static members ==============================================================================

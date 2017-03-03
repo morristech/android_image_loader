@@ -38,11 +38,7 @@ import java.io.IOException;
  *
  * @author Martin Albedinsky
  */
-public final class ImageTask extends BaseImageTask<Picasso, String, Transformation> {
-
-	/**
-	 * Interface ===================================================================================
-	 */
+public class ImageTask extends BaseImageTask<Picasso, String, Transformation> {
 
 	/**
 	 * Constants ===================================================================================
@@ -52,6 +48,10 @@ public final class ImageTask extends BaseImageTask<Picasso, String, Transformati
 	 * Log TAG.
 	 */
 	private static final String TAG = "ImageTask";
+
+	/**
+	 * Interface ===================================================================================
+	 */
 
 	/**
 	 * Static members ==============================================================================

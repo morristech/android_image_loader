@@ -25,7 +25,7 @@ import android.support.annotation.NonNull;
  *
  * @author Martin Albedinsky
  */
-public class ImageLoaderFactory {
+public abstract class ImageLoaderFactory {
 
 	/**
 	 * Interface ===================================================================================
@@ -53,6 +53,18 @@ public class ImageLoaderFactory {
 	 */
 
 	/**
+	 * Creates a new empty instance of ImageLoaderFactory. Inheritance hierarchies should declare
+	 * theirs constructors private in order to became a standard utility classes.
+	 */
+	protected ImageLoaderFactory() {
+		// We allow to override this class only so it may be used as base for image loader factory.
+	}
+
+	/**
+	 * Methods =====================================================================================
+	 */
+
+	/**
 	 * Provides an instance of {@link ImageLoader} implementation.
 	 *
 	 * @return Image loader implementation ready to be used.
@@ -61,10 +73,6 @@ public class ImageLoaderFactory {
 	public static ImageLoader createLoader() {
 		return new ImageLoaderImpl(com.nostra13.universalimageloader.core.ImageLoader.getInstance());
 	}
-
-	/**
-	 * Methods =====================================================================================
-	 */
 
 	/**
 	 * Inner classes ===============================================================================

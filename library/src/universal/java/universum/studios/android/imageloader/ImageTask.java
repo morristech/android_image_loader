@@ -73,11 +73,11 @@ public class ImageTask extends BaseImageTask<com.nostra13.universalimageloader.c
 	protected boolean onLoad(@NonNull com.nostra13.universalimageloader.core.ImageLoader loader, @Nullable ImageLoader.Callback callback) {
 		ensureHasTargetOrThrow();
 		final DisplayImageOptions displayOptions = onPrepareDisplayOptionsBuilder(new DisplayImageOptions.Builder()).build();
-		final Listener listener = callback != null ? new Listener(this, callback) : null;
-		if (mView != null) {
-			loader.displayImage(mTarget, mView, displayOptions, listener);
-		} else {
+		final Listener listener = callback == null ? null : new Listener(this, callback);
+		if (mView == null) {
 			loader.loadImage(mTarget, displayOptions, listener);
+		} else {
+			loader.displayImage(mTarget, mView, displayOptions, listener);
 		}
 		return true;
 	}
@@ -190,7 +190,7 @@ public class ImageTask extends BaseImageTask<com.nostra13.universalimageloader.c
 		 * @return New error instance.
 		 */
 		private static ImageLoader.Error errorFromFailReason(FailReason failReason) {
-			int reason = ImageLoader.Error.REASON_UNKNOWN;
+			final int reason;
 			switch (failReason.getType()) {
 				case IO_ERROR:
 					reason = ImageLoader.Error.REASON_IO;
@@ -206,6 +206,8 @@ public class ImageTask extends BaseImageTask<com.nostra13.universalimageloader.c
 					break;
 				case UNKNOWN:
 				default:
+					reason = ImageLoader.Error.REASON_UNKNOWN;
+					break;
 			}
 			return new ImageLoader.Error(reason, "Failed to load image.", failReason.getCause());
 		}

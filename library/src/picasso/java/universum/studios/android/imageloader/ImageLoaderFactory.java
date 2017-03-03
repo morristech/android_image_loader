@@ -28,11 +28,7 @@ import com.squareup.picasso.Picasso;
  *
  * @author Martin Albedinsky
  */
-public class ImageLoaderFactory {
-
-	/**
-	 * Interface ===================================================================================
-	 */
+public abstract class ImageLoaderFactory {
 
 	/**
 	 * Constants ===================================================================================
@@ -42,6 +38,10 @@ public class ImageLoaderFactory {
 	 * Log TAG.
 	 */
 	// private static final String TAG = "ImageLoaderFactory";
+
+	/**
+	 * Interface ===================================================================================
+	 */
 
 	/**
 	 * Static members ==============================================================================
@@ -56,6 +56,18 @@ public class ImageLoaderFactory {
 	 */
 
 	/**
+	 * Creates a new empty instance of ImageLoaderFactory. Inheritance hierarchies should declare
+	 * theirs constructors private in order to became a standard utility classes.
+	 */
+	protected ImageLoaderFactory() {
+		// We allow to override this class only so it may be used as base for image loader factory.
+	}
+
+	/**
+	 * Methods =====================================================================================
+	 */
+
+	/**
 	 * Creates a new instance of {@link ImageLoader} implementation for the given <var>context</var>.
 	 *
 	 * @param context The context for which to create the loader.
@@ -65,10 +77,6 @@ public class ImageLoaderFactory {
 	public static ImageLoader createLoader(@NonNull Context context) {
 		return new ImageLoaderImpl(Picasso.with(context));
 	}
-
-	/**
-	 * Methods =====================================================================================
-	 */
 
 	/**
 	 * Inner classes ===============================================================================

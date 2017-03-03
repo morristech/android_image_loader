@@ -32,10 +32,6 @@ import com.squareup.picasso.Picasso;
 final class ImageLoaderImpl extends BaseImageLoader<Picasso> {
 
 	/**
-	 * Interface ===================================================================================
-	 */
-
-	/**
 	 * Constants ===================================================================================
 	 */
 
@@ -43,6 +39,10 @@ final class ImageLoaderImpl extends BaseImageLoader<Picasso> {
 	 * Log TAG.
 	 */
 	private static final String TAG = "ImageLoader#Picasso";
+
+	/**
+	 * Interface ===================================================================================
+	 */
 
 	/**
 	 * Static members ==============================================================================

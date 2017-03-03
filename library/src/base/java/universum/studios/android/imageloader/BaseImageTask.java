@@ -35,16 +35,15 @@ import java.lang.annotation.RetentionPolicy;
  * This class can be used as base for a custom implementation of {@link ImageLoader.Task} interface
  * to be used in conjunction with {@link BaseImageLoader}.
  *
- * @param <Loader> Type of the specific loader that will be used by subclass of BaseImageTask to
- *                 perform image loading or removing process.
+ * @param <Loader>         Type of the specific loader that will be used by subclass of BaseImageTask
+ *                         to perform image loading or removing process.
+ * @param <Target>         Type of the target that is used by Task implementation to load requested
+ *                         image.
+ * @param <Transformation> Type of the transformation that can be applied to the loaded image.
  * @author Martin Albedinsky
  * @see BaseImageLoader
  */
 public abstract class BaseImageTask<Loader, Target, Transformation> implements ImageLoader.Task<Target, Transformation> {
-
-	/**
-	 * Interface ===================================================================================
-	 */
 
 	/**
 	 * Constants ===================================================================================
@@ -56,18 +55,12 @@ public abstract class BaseImageTask<Loader, Target, Transformation> implements I
 	// private static final String TAG = "BaseImageTask";
 
 	/**
-	 * Static members ==============================================================================
+	 * Interface ===================================================================================
 	 */
 
 	/**
-	 *
+	 * Static members ==============================================================================
 	 */
-	@IntDef({
-			REQUEST_DO_NOT_ANIMATE
-	})
-	@Retention(RetentionPolicy.SOURCE)
-	protected @interface Request {
-	}
 
 	/**
 	 * Request flag indicating that an attachment process of a loaded image to its associated view
@@ -78,6 +71,16 @@ public abstract class BaseImageTask<Loader, Target, Transformation> implements I
 	 * @see #hasRequest(int)
 	 */
 	protected static final int REQUEST_DO_NOT_ANIMATE = 0x00000001;
+
+	/**
+	 *
+	 */
+	@IntDef({
+			REQUEST_DO_NOT_ANIMATE
+	})
+	@Retention(RetentionPolicy.SOURCE)
+	protected @interface Request {
+	}
 
 	/**
 	 * Members =====================================================================================

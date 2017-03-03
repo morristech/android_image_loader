@@ -42,10 +42,6 @@ import java.util.concurrent.ExecutionException;
 public class ImageTask extends BaseImageTask<RequestManager, String, BitmapTransformation> {
 
 	/**
-	 * Interface ===================================================================================
-	 */
-
-	/**
 	 * Constants ===================================================================================
 	 */
 
@@ -53,6 +49,10 @@ public class ImageTask extends BaseImageTask<RequestManager, String, BitmapTrans
 	 * Log TAG.
 	 */
 	// private static final String TAG = "ImageTask";
+
+	/**
+	 * Interface ===================================================================================
+	 */
 
 	/**
 	 * Static members ==============================================================================

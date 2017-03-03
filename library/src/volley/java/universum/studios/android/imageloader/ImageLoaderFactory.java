@@ -21,7 +21,7 @@ package universum.studios.android.imageloader;
 /**
  * @author Martin Albedinsky
  */
-public final class ImageLoaderFactory {
+public abstract class ImageLoaderFactory {
 
 	/**
 	 * Interface ===================================================================================
@@ -47,6 +47,14 @@ public final class ImageLoaderFactory {
 	/**
 	 * Constructors ================================================================================
 	 */
+
+	/**
+	 * Creates a new empty instance of ImageLoaderFactory. Inheritance hierarchies should declare theirs
+	 * constructors private in order to became a standard utility classes.
+	 */
+	protected ImageLoaderFactory() {
+		// We allow to override this class only so it may be used as base for image loader factory.
+	}
 
 	/**
 	 * Methods =====================================================================================
