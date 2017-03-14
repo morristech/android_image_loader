@@ -5,6 +5,10 @@ Image Loader
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f5d740b5071a4320be8f22b651509086)](https://www.codacy.com/app/universum-studios/android_image_loader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=universum-studios/android_image_loader&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/f5d740b5071a4320be8f22b651509086)](https://www.codacy.com/app/universum-studios/android_image_loader?utm_source=github.com&utm_medium=referral&utm_content=universum-studios/android_image_loader&utm_campaign=Badge_Coverage)
 
+Unified image loader API layer for the Android platform.
+
+For more information please visit the **[Wiki](https://github.com/universum-studios/android_image_loader/wiki)**.
+
 ## Download ##
 [![Download](https://api.bintray.com/packages/universum-studios/android/universum.studios.android%3Aimage-loader/images/download.svg)](https://bintray.com/universum-studios/android/universum.studios.android%3Aimage-loader/_latestVersion)
 
