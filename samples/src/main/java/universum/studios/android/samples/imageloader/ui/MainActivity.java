@@ -21,7 +21,7 @@ package universum.studios.android.samples.imageloader.ui;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
 
-import universum.studios.android.samples.ui.SamplesNavigationActivity;
+import universum.studios.android.support.samples.ui.SamplesNavigationActivity;
 
 /**
  * @author Martin Albedinsky
