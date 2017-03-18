@@ -1,0 +1,52 @@
+// Defines configuration used across the library project.
+def buildConfig = [
+        compileSdkVersion: 25,
+        minSdkVersion    : 9,
+        targetSdkVersion : 25,
+        buildToolsVersion: '25.0.2'
+]
+
+def testConfig = [
+        instrumentationRunner: 'android.support.test.runner.AndroidJUnitRunner'
+]
+
+def libraryConfig = [
+        version: '0.6.1'
+]
+
+def mavenConfig = [
+        localUrl                 : System.getenv('MAVEN_URL_LOCAL'),
+        groupId                  : 'universum.studios.android',
+        artifactId               : 'image-loader',
+        version                  : libraryConfig.version,
+        packaging                : 'pom',
+        projectName              : 'Android Image Loader',
+        projectDescription       : 'Unified image loader API layer for the Android platform.',
+        projectUrl               : 'https://github.com/universum-studios/android_image_loader',
+        projectInceptionYear     : '2016',
+        projectIssueManagementUrl: 'https://github.com/universum-studios/android_image_loader/issues'
+]
+
+def bintrayConfig = [
+        publish                  : false,
+        packageName              : mavenConfig.groupId + ':' + mavenConfig.artifactId,
+        packageLabels            : ['android', 'imageloader', 'unified'],
+        packageVersionName       : mavenConfig.version,
+        packageVersionDescription: 'Version patch.',
+        packageVersionTag        : mavenConfig.version
+]
+
+def codacyConfig = [
+        // This path must be relative to the codacy.gradle file placed in the /library directory.
+        tokensPath : '../../codacy.tokens',
+        projectName: 'android_image_loader'
+]
+
+ext.config = [
+        "build"  : buildConfig,
+        "test"   : testConfig,
+        "library": libraryConfig,
+        "maven"  : mavenConfig,
+        "bintray": bintrayConfig,
+        "codacy" : codacyConfig
+]
