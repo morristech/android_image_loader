@@ -18,6 +18,10 @@
  */
 package universum.studios.android.test;
 
+import android.content.Context;
+import android.support.annotation.CallSuper;
+import android.support.test.InstrumentationRegistry;
+
 import org.junit.After;
 import org.junit.Before;
 
@@ -29,18 +33,35 @@ import org.junit.Before;
 public abstract class BaseTest {
 
 	/**
+	 * Log TAG.
+	 */
+	@SuppressWarnings("unused")
+	private static final String TAG = "BaseTest";
+
+	/**
+	 * Target context obtained from the {@link InstrumentationRegistry}.
+	 * <p>
+	 * It is always valid between calls to {@link #beforeTest()} and {@link #afterTest()}.
+	 */
+	protected Context mContext;
+
+	/**
 	 * Called before execution of each test method starts.
 	 */
 	@Before
-	public void beforeTest() {
+	@CallSuper
+	public void beforeTest() throws Exception {
 		// Inheritance hierarchies may for example acquire here resources needed for each test.
+		this.mContext = InstrumentationRegistry.getTargetContext();
 	}
 
 	/**
 	 * Called after execution of each test method finishes.
 	 */
 	@After
-	public void afterTest() {
+	@CallSuper
+	public void afterTest() throws Exception {
 		// Inheritance hierarchies may for example release here resources acquired in beforeTest() call.
+		this.mContext = null;
 	}
 }
